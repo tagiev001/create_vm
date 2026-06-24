@@ -1,0 +1,22 @@
+#cloud-config
+create_hostname_file: true
+
+users:
+    - name: user
+      disable_root: true
+      lock_passwd: false
+      sudo: ALL=(ALL) ALL
+      groups: users, wheel
+      shell: /bin/bash
+      plain_text_passwd: "1234"
+      ssh_authorized_keys:
+          - ssh-ed25519 publickey you@yourdevice
+
+package_update: true
+package_upgrade: true
+packages:
+    - qemu-guest-agent
+
+runcmd:
+    - systemctl enable qemu-guest-agent
+    - systemctl start qemu-guest-agent

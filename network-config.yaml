@@ -1,0 +1,13 @@
+version: 2
+ethernets:
+    eth0:
+        dhcp4: false
+        addresses:
+            - 7.7.7.7/24
+        routes:
+            - to: 0.0.0.0/0
+              via: 7.7.7.7
+        nameservers:
+            addresses:
+                - 7.7.7.7
+                - 7.7.7.7
