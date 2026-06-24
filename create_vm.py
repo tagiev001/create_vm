@@ -67,19 +67,6 @@ def create_virtual_machine(vm_name, vm_ram, vm_vcpus, vm_net, vm_disk):
     exec_command(EXEC_VIRT_INSTALL_CMD)
     print(f"{vm_name} created! Wait, while cloud-init is working")
 
-def show_virtual_machine_info():
-    pass
-
-def is_cloudinit_finished():
-    pass
-
-def create_network():
-    pass
-
-def install_deps():
-    pass
-
-
 VM_NAME = "test-vm"
 VM_RAM = 2
 VM_VCPUS = 2
