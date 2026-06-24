@@ -60,7 +60,6 @@ def create_virtual_machine(vm_name, vm_ram, vm_vcpus, vm_net, vm_disk):
         "--import",
         "--os-variant", "almalinux8",
         "--network", f"network={vm_net}",
-        "--graphics", "vnc",
         "--noautoconsole",
         "--wait", "0"
     ]
@@ -89,7 +88,6 @@ VM_SIZE = 15
 
 
 IMAGE_LINK = "https://cloud.debian.org/images/cloud/trixie/20250806-2196/debian-13-genericcloud-amd64-20250806-2196.qcow2"
-IMAGE_LINK = "https://repo.almalinux.org/almalinux/8/cloud/x86_64/images/AlmaLinux-8-GenericCloud-ext4-8.10-20260518.x86_64.qcow2"
 IMAGE_NAME = f"{VM_NAME}.qcow2"
 IMAGE_PATH = f"/var/lib/libvirt/images/{IMAGE_NAME}"
 
