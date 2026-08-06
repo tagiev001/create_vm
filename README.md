@@ -53,3 +53,5 @@ git clone https://github.com/tagiev001/create_vm.git
 | -|-|-|
 | Debian13 | https://cloud.debian.org/images/cloud/trixie/20250806-2196/debian-13-genericcloud-amd64-20250806-2196.qcow2 | enp1s0 |
 | Almalinux8 | https://repo.almalinux.org/almalinux/8/cloud/x86_64/images/AlmaLinux-8-GenericCloud-ext4-8.10-20260518.x86_64.qcow2 | eth0 |
+
+- [] Автогенерация cloud-init конфигов на основе задаваемых параметров
